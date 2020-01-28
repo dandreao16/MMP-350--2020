@@ -13,6 +13,7 @@ a {
 	color: #6819A1;
 	padding: 0.25em;
 	transition: background-color 300ms;
+	text-decoration: none;
 }
 
 a:hover {
@@ -21,10 +22,12 @@ a:hover {
 
 ul {
 	padding: 0;
+
 }
 
 li { 
 	list-style: none;
+
 }
 
 
