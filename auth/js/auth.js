@@ -7,6 +7,7 @@ const loginEmail = document.getElementById("login-email");
 const loginPassword = document.getElementById("login-password");
 const loginButton = document.getElementById("login-button");
 const loginMessage = document.getElementById("login-message");
+const loginUsername = document.getElementById("login-username");
 
 /*
 	event listener 
@@ -26,6 +27,6 @@ function onError(errorMessage) {
 }
 
 function userLoggedIn(uid,displayName) {
-	username.textContent = "Welcome" + displayName;
+	loginUsername.textContent = "Welcome" + displayName;
 }
 

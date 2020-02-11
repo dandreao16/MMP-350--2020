@@ -8,35 +8,21 @@
 
 
 
-const loginEmail = document.getElementById("login-email");
+const signUpEmail = document.getElementById("sign-up-email");
 
-const loginPassword = js.getEl("login-password");
+const signUpPassword = js.getEl("sign-up-password");
 
-const loginButton = js.getEl("login-button");
+const signUpButton = js.getEl("sign-up-button");
 
-const loginMessage = js.getEl("login-message");
+const signUpMessage = js.getEl("sign-up-message");
 
-const userName = js.getEl("user-name");
-
-
-
-/*
-
-	event listener 
-
-	listening user input, mouse clicks or keyboard presses
+const signUpUserName = js.getEl("sign-up-username");
 
 
 
-	onclick captures a click event
+signUpButton.onclick = function() {
 
-*/
-
-
-
-loginButton.onclick = function() {
-
-	fb.login(loginEmail.value, loginPassword.value);
+	fb.create( signUpUserName.value, signUpEmail.value, signUpPassword.value);
 
 };
 
@@ -44,14 +30,8 @@ loginButton.onclick = function() {
 
 function onError(errorMessage) {
 
-	loginMessage.textContent = errorMessage;
+	signUpMessage.textContent = errorMessage;
 
 }
 
 
-
-function userLoggedIn(uid, displayName) {
-
-	userName.textContent = "Welcome " + displayName;
-
-}
