@@ -1,0 +1,14 @@
+h1,
+input,
+button {
+	font-family: 'Lacquer', cursive;
+}
+
+.post,
+a {
+	font-family: 'Raleway', sans-serif;
+}
+
+.post-date {
+	color: gray;
+}
