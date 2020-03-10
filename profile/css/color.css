@@ -1,0 +1,50 @@
+:root {
+	 /*purple analagous color scheme*/ 
+	--main-color: #EBD6FF;
+	--accent-color: #C3B7E8;
+	--placeholder-color: #C9CBFF;
+	
+}
+
+:root {
+	 /*pink monochromatic color scheme*/
+	--main-color: #FFC2D9;
+	--accent-color: #FF87B5;
+	--placeholder-color: #D19FB2;
+	
+}
+
+:root {
+	 /*Complementary color scheme*/ 
+	--main-color: #FFC2D9;
+	--accent-color: #64B369;
+	--placeholder-color: #C2FFC6;
+	
+}
+
+
+button, input, textarea {
+	background-color: var(--main-color);
+	border-color: var(--accent-color);
+	color: var(--accent-color);
+}
+
+button::placeholder, input::placeholder, textarea::placeholder {
+	color: var(--placeholder-color);
+}
+
+a {
+	color: var(--accent-color);
+}
+
+a:hover {
+	color: var(--main-color);
+}
+
+.post {
+	border-color: var(--accent-color);
+}
+
+#title {
+	color: var(--accent-color);
+}
